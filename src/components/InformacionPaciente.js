@@ -10,7 +10,47 @@ const InformacionPaciente = ({paciente, setPaciente, setModalPaciente}) => {
         <SafeAreaView
             style={styles.contenedor}
         >
-            <Text>Información paciente</Text>
+            <View>
+                <Pressable onLongPress={() => setModalPaciente(false)}
+                style={styles.btnCerrar}>
+                    <Text style={styles.btnCerrarTexto}>Cerrar</Text>
+                </Pressable>
+            </View>
+            <Text style={styles.titulo}>Información</Text><Text style={styles.tituloBold}>paciente</Text>
+            <Text>{paciente.paciente}</Text>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
            {/* <Text style={styles.titulo}>Informacion {''}
                <Text style={styles.tituloBold}>Paciente</Text> 
             </Text>
@@ -70,6 +110,7 @@ const InformacionPaciente = ({paciente, setPaciente, setModalPaciente}) => {
 const styles = StyleSheet.create({
     contenedor: {
         // backgroundColor: '#F59E0B',
+        marginTop: 20,//
         backgroundColor: '#fff',
         flex: 1
     },
